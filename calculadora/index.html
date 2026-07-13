@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        output {
+            display: block;
+            font-weight: bold;
+            color: darkblue;
+            margin-top: 10px;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            background-color: #eef6ff;
+            padding: 10px 20px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script src="./index.js" defer></script>     
+</head>
+<body>
+    <h1>Calculadora Gatets</h1>
+    <form action=""  method="dialog">
+        <input type="text" id="op1" placeholder="Ingrese el primer número">
+        <input type="text" id="operador" placeholder="Ingrese el operador (+, -, *, /)">
+        <input type="text" id="op2" placeholder="Ingrese el segundo número">
+        <input type="submit" value="Calcular" id="calcular">
+    </form>
+    <p id="resultado"></p>
+    <output id="saludo"></output>
+</body>
+</html>
