@@ -29,8 +29,23 @@
             margin-right: auto;
         }
     </style>
-    <script src="./index.js" defer></script>     
+    <script src="./index.js" defer></script>
+
+    <p id="coordenadas">Obteniendo ubicación...</p>
+
+    <script>
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                document.getElementById("coordenadas").textContent = `Latitud: ${position.coords.latitude}, Longitud: ${position.coords.longitude}`;
+            },
+            (error) => {
+                document.getElementById("coordenadas").textContent = `Error: ${error.message}`;
+            }
+        );
+    </script>
+
 </head>
+
 <body>
     <h1>Gatets: Mandy Mató Tomillo</h1>
     <form action=""  method="dialog">

@@ -5,6 +5,11 @@ const operador = document.getElementById("operador");
 const calcular = document.getElementById("calcular");
 const resultado = document.getElementById("resultado");
 const saludo = document.getElementById("saludo");
+let pp = new String("Pepe");
+
+console.log(pp);
+console.log(typeof pp);
+console.log(pp);
 
 calcular.addEventListener("click", calcularOperacion);
 
@@ -43,7 +48,6 @@ const persona = {
         setInterval(() => {
             this.numero++;
             saludo.textContent = "Hola, soy " + this.numero;
-            console.log("Hola, soy " + this.numero);
         }, 1000);
     }
 };
